@@ -9,6 +9,11 @@
 </head>
 <body <?php body_class() ?>>
 <div class="container">
+    <?php
+        wp_nav_menu( array(
+        'theme_location' => 'menu-1',
+    ));
+    ?>
     <header class="site-header">
         <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
         <h2><?php bloginfo( 'description' ); ?></h2>
